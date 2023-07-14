@@ -1,7 +1,3 @@
-FROM hshar/webapp
-ADD ./devopsIQ /var/www/html/devopsIQ
+FROM httpd:latest
+COPY index.html /usr/local/apache2/htdocs
 EXPOSE 80
-EXPOSE 81
-EXPOSE 82
-EXPOSE 83
-EXPOSE 84
